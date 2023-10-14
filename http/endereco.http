@@ -1,0 +1,38 @@
+GET http://localhost:8080/api/enderecos
+###
+
+GET http://localhost:8080/api/enderecos/2
+###
+
+POST http://localhost:8080/api/enderecos
+Content-Type: application/json
+
+{
+    "cep":"2898542",
+    "logradouro": "Rua das Amélias",
+    "numero": 50,
+    "complemento": "CASA 03",
+    "bairro": "Bairro XYZ",
+    "cidade":"Teresópolis",
+    "uf": "RJ",
+    "titular": {
+        "id": 1
+    }
+}
+### 
+
+PUT http://localhost:8080/api/enderecos/2
+Content-Type: application/json
+
+{
+  "cep": "2898543",
+  "logradouro": "Rua das flores",
+  "numero": 100,
+  "complemento": "CASA 04",
+  "bairro": "Bairro XPTO",
+  "cidade": "Teresópolis - RJ",
+  "uf": "RJ"
+}
+###
+
+DELETE  http://localhost:8080/api/enderecos/1

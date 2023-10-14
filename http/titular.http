@@ -1,0 +1,32 @@
+GET http://localhost:8080/api/titulares
+###
+
+GET http://localhost:8080/api/titulares/1
+###
+
+POST http://localhost:8080/api/titulares
+Content-Type: application/json
+
+{
+    "nome": "Beltrano da Silva",
+    "cpfOuCnpj": "123.456.789-02",
+    "email": "Beltrano2@gmail.com",
+    "telefone": "(21) 9 91999199",
+    "dataNascimento": "1990-08-06T00:00:00",
+    "endereco": {
+        "cep": "2587451",
+        "logradouro": "Rua dos Bobos",
+        "numero": 50,
+        "complemento": "Casa",
+        "bairro": "Centro",
+        "cidade": "São Paulo",
+        "uf": "SP"
+    },
+    "contas": [
+        {
+           "agencia": "0001",
+           "numero": "123458",
+           "saldo": 1000.0
+        }
+    ]
+}

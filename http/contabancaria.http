@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/contas-bancarias
+###
+
+GET http://localhost:8080/api/contas-bancarias/2
+###
+
+POST http://localhost:8080/api/contas-bancarias
+Content-Type: application/json
+
+{
+    "agencia":"0001",
+    "numero": "12347",
+    "saldo": 300.0,
+    "titular": {
+      "id": 1
+    }   
+}
+### 
+
+PUT http://localhost:8080/api/contas-bancarias/2
+Content-Type: application/json
+
+{
+    "agencia":"0001",
+    "numero": "12346",
+    "saldo": 300.0,
+ 
+}
+###
+
+DELETE  http://localhost:8080/api/contas-bancarias/1
